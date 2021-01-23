@@ -1,118 +1,166 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 
 <head>
+    <!-- encoding -->
     <meta charset="UTF-8">
+    <!-- responsive -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- css/scss -->
     <link rel="stylesheet" href="CSS/style.css">
+    <!-- icons -->
     <script src="https://kit.fontawesome.com/d55e797bfb.js" crossorigin="anonymous"></script>
+    <!-- font -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Teko:wght@300;400;500;600;700&display=swap"
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
         rel="stylesheet">
 
     <title>My Bachelord</title>
 </head>
 
 <body>
-
+    <!-- header -->
     <header>
-        <h1>My Bachelord - ECV Digital Aix en Provence</h1>
-        <nav>
-            <a href="#">Hyperplanning</a>
-            <a href="#">Photos de classe</a>
-        </nav>
+        <div>
+            <!-- title -->
+            <h1>My Bachelord</h1>
+            <!-- navigation -->
+            <nav>
+                <!-- nav links -->
+                <a class="nav-link" href="#">Hyperplanning</a>
+                <a class="nav-link" href="#">Photo de classe</a>
+            </nav>
+        </div>
     </header>
 
+    <!-- main -->
     <main>
-        <div class="creasso">
-            <img class="logo" src="assets/Logo digital.svg" alt="logo creasso">
-            <img class="affiche" src="assets/affiche.jpg" alt="">
+        <!-- date place and type of lesson -->
+        <div class="week-dates">
+            <div>
+                <p>Du xx/xx au xx/xx : Présentiel - Salle Singapour</p>
+            </div>
         </div>
-
+        <!-- banner -->
+        <img class="banner" src="assets/domenico-loia-hGV2TfOh0ns-unsplash.jpg" alt="#">
         <div class="main">
-            <div class="main-haut">
-                <i class="fas fa-chalkboard-teacher"></i>
-                <div>
-                    <p>Cette semaine : Présentiel - Salle Singapour</p>
-                    <p>Passer une bonne semaine</p>
-                </div>
-                <i class="fas fa-graduation-cap"></i>
-            </div>
-
-            <div class="main-bas">
-                <div class="main-bas-gauche">
-                    <h2 class="main-bas-gauche-titre">Informations importantes</h2>
-                    <div class="main-bas-gauche-article1">
-                        <div>
-                            <img src="assets/Cours-Mirabeau.jpg" alt="image information">
-                        </div>
-
+            <!-- news's -->
+            <section class="newspaper">
+                <!-- title -->
+                <h2>A la une</h2>
+                <div class="newspaper-boite">
+                    <!-- article -->
+                    <article class="newspaper-article">
+                        <!-- images -->
+                        <div><img src="assets/" alt=""></div>
+                        <!-- text -->
                         <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                            Esse illum optio placeat unde, quos ratione eligendi corporis
-                            quia earum consectetur vel qui dolores eos aspernatur eaque
-                            dolor quisquam, velit fugiat.
+                            Lorem ipsum dolor sit amet, consectetur <br>
+                            adipiscing elit. Mauris porta vel risus at <br>
+                            fermentum. Nunc mollis eu risus eget consequat.
                         </p>
-                    </div>
-
-                    <div class="main-bas-gauche-article2">
-                        <div>
-                            <img src="assets/photo_5f4e6c2c7ed01.jpg" alt="image information">
-                        </div>
-
+                    </article>
+                    <!-- article -->
+                    <article class="newspaper-article">
+                        <!-- images -->
+                        <div><img src="assets/" alt=""></div>
+                        <!-- text -->
                         <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                            Esse illum optio placeat unde, quos ratione eligendi corporis
-                            quia earum consectetur vel qui dolores eos aspernatur eaque
-                            dolor quisquam, velit fugiat.
+                            Lorem ipsum dolor sit amet, consectetur <br>
+                            adipiscing elit. Mauris porta vel risus at <br>
+                            fermentum. Nunc mollis eu risus eget consequat.
                         </p>
-                    </div>
+                    </article>
+                    <!-- article -->
+                    <article class="newspaper-article">
+                        <!-- images -->
+                        <div><img src="assets/" alt=""></div>
+                        <!-- text -->
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur <br>
+                            adipiscing elit. Mauris porta vel risus at <br>
+                            fermentum. Nunc mollis eu risus eget consequat.
+                        </p>
+                    </article>
                 </div>
+            </section>
 
-                <div class="main-bas-droite">
-                    <div class="main-bas-droite-texte">
-                        <p>lorem ipsum dolor sit amet ...</p>
-                    </div>
-                    <div class="barre"></div>
+            <!-- lessons -->
+            <section class="lessons">
+                <!-- title -->
+                <h2>Les cours</h2>
 
-                    <div class="main-bas-droite-texte">
-                        <p>lorem ipsum dolor sit amet ...</p>
-                    </div>
-                    <div class="barre"></div>
-
-                    <div class="main-bas-droite-texte">
-                        <p>lorem ipsum dolor sit amet ...</p>
-                    </div>
-                    <div class="barre"></div>
-
-                    <div class="main-bas-droite-texte">
-                        <p>lorem ipsum dolor sit amet ...</p>
-                    </div>
-                    <div class="barre"></div>
-
-                    <div class="main-bas-droite-texte">
-                        <p>lorem ipsum dolor sit amet ...</p>
-                    </div>
-                    <div class="barre"></div>
-
-                    <div class="main-bas-droite-texte">
-                        <p>lorem ipsum dolor sit amet ...</p>
-                    </div>
-                    <div class="barre"></div>
-
-                    <div class="main-bas-droite-texte">
-                        <p>lorem ipsum dolor sit amet ...</p>
-                    </div>
+                <!-- lessons content -->
+                <div class="lessons-box">
+                    <div class="lessons-box-content"><p>Lorem ipsum dolor sit amet...</p></div>
+                    <div class="lessons-box-content"><p>Lorem ipsum dolor sit amet...</p></div>
+                    <div class="lessons-box-content"><p>Lorem ipsum dolor sit amet...</p></div>
+                    <div class="lessons-box-content"><p>Lorem ipsum dolor sit amet...</p></div>
+                    <div class="lessons-box-content"><p>Lorem ipsum dolor sit amet...</p></div>
+                    <div class="lessons-box-content"><p>Lorem ipsum dolor sit amet...</p></div>
+                    <div class="lessons-box-content"><p>Lorem ipsum dolor sit amet...</p></div>
+                    <div class="lessons-box-content"><p>Lorem ipsum dolor sit amet...</p></div>
                 </div>
-            </div>
+            </section>
+
+            <!-- events -->
+            <section class="events">
+                <!-- creasso part -->
+                <aside class="events-creasso">
+                    <div>
+                        <p>Evenement</p>
+                        <img src="assets/Logo digital.svg" alt="#">
+                    </div>
+                    <img src="assets/affiche.jpg" alt="#">
+                </aside>
+
+                <!-- general events part -->
+                <div class="events-article">
+                    <!-- event article -->
+                    <article class="events-article-content">
+                        <!-- event image -->
+                        <img src="assets/ECV-Aix-en-Provence.jpg" alt="#">
+                        <!-- event text -->
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur <br>
+                            adipiscing elit. Mauris porta vel risus at <br>
+                            fermentum. Nunc mollis eu risus eget consequat.
+                        </p>
+                    </article>
+                    <!-- event article -->
+                    <article class="events-article-content events-article-content--modifier">
+                        <!-- event image -->
+                        <img class="modifier" src="assets/visite-virtuelle-ecv-aix.jpg" alt="#">
+                        <!-- event text -->
+                        <p class="p-modifier">
+                            Lorem ipsum dolor sit amet, consectetur <br>
+                            adipiscing elit. Mauris porta vel risus at <br>
+                            fermentum. Nunc mollis eu risus eget consequat.
+                        </p>
+                    </article>
+                    <!-- event article -->
+                    <article class="events-article-content">
+                        <!-- event image -->
+                        <img src="assets/hackathonecvaix2018-maelysizzo-44-1024x637.jpg" alt="#">
+                        <!-- event text -->
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur <br>
+                            adipiscing elit. Mauris porta vel risus at <br>
+                            fermentum. Nunc mollis eu risus eget consequat.
+                        </p>
+                    </article>
+                </div>
+            </section>
         </div>
     </main>
 
+    <!-- footer -->
     <footer>
-        <h3>© 2021</h3>
+        <h3>© 2021 - ECV DIGITAL - B1</h3>
     </footer>
 
+    <!-- javascript -->
     <script src="js/script.js"></script>
 
 </body>

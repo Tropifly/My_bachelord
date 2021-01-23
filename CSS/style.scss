@@ -1,13 +1,23 @@
-$couleur-primaire : #00B1FF;
-$couleur-secondaire : #E5E5E5;
-$couleur-tertiaire : #ffffff;
-$test : #ffc0cb;
+// colors
+$first-color : #4A4A4A;
+$second-color : #A2A2A2;
+$third-color : #000000;
+$fourth-color : #ffffff;
+$test-color : #ffc0cb;
+$test-color-2 : #ff0000;
 
-$marge-haut : 50px;
+// width
+$global-width : 90%;
+
+// DON'T TOUCH THE BLOCK BELOW
+::-webkit-scrollbar {
+    display: none;
+}
 
 html {
+    // basic font
     font-size: 18px;
-    font-family: 'Teko', sans-serif;
+    font-family: 'Roboto', sans-serif;
 }
 
 body {
@@ -26,191 +36,236 @@ body {
     margin: 0;
 }
 
+// DON'T TOUCH THE BLOCK ABOVE
+
 header {
     width: 100%;
     height: 80px;
-    background-color: $couleur-primaire;
+    background-color: $first-color;
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
     align-items: center;
+    justify-content: center;
 
-    h1 {
-        color: $couleur-tertiaire;
-        font-size: 2rem;
+    div {
+        width: $global-width;
+        height: auto;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+
+        h1 {
+            font-size: 2rem;
+            font-weight: 700;
+            color: $fourth-color;
+        }
     }
 
     nav {
-        width: 15%;
+        width: 18%;
         display: flex;
         flex-direction: row;
-        justify-content: space-between;
         align-items: center;
+        justify-content: space-between;
 
         a {
-            color: $couleur-tertiaire;
-            font-size: 1.5rem;
+            color: $fourth-color;
             text-decoration: none;
+            font-size: 1.15rem;
         }
     }
 }
 
 main {
     width: 100%;
-    height: 80vh;
-    margin-top: $marge-haut;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
+    height: auto;
+    background-color: $fourth-color;
 
-    .creasso {
-        width: 30%;
-        height: 100%;
+    .week-dates {
+        width: 100%;
+        height: 40px;
+        background-color: $second-color;
         display: flex;
-        flex-direction: column;
-        justify-content: center;
+        flex-direction: row;
         align-items: center;
+        justify-content: center;
 
-        .logo {
-            width: 50%;
-            height: auto;
-        }
+        div {
+            width: $global-width;
 
-        .affiche {
-            width: 100%;
-            height: 80%;
-            margin-top: 30px;
-            object-fit: contain;
+            p {
+                color: $fourth-color;
+                font-weight: 400;
+            }
         }
     }
 
+    .banner {
+        width: 100%;
+        height: 35vh;
+        object-fit: cover;
+        object-position: 0px -340px;
+    }
+
     .main {
-        width: 60%;
-        height: 100%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: space-between;
+        width: $global-width;
+        height: auto;
+        margin-right: auto;
+        margin-left: auto;
 
-        &-haut {
+        .newspaper {
             width: 100%;
+            height: auto;
             display: flex;
-            flex-direction: row;
-            align-items: center;
-            justify-content: space-around;
+            flex-direction: column;
+            background-color: $fourth-color;
 
-            i {
-                font-size: 5rem;
+            h2 {
+                margin: 20px 0px;
             }
 
-            div p {
-                text-align: center;
-                font-size: 2rem;
+            &-boite {
+                width: 100%;
+                height: auto;
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: space-between;
+
+                article {
+                    width: 32%;
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    justify-content: space-between;
+
+                    div {
+                        width: 153px;
+                        height: 153px;
+                        background-color: $second-color;
+                        border-radius: 10px;
+                    }
+
+                    p {
+                        width: 70%;
+                        text-align: center;
+                    }
+                }
             }
         }
 
-        &-bas {
+        .lessons {
             width: 100%;
-            height: 80%;
+            height: auto;
+            display: flex;
+            flex-direction: column;
+            background-color: $fourth-color;
+            margin-bottom: 40px;
+
+            h2 {
+                margin-top: 30px;
+                margin-bottom: 20px;
+            }
+
+            &-box {
+                display: grid;
+                grid-template-rows: auto;
+                grid-template-columns: repeat(4, 1fr);
+                gap: 15px;
+
+                &-content {
+                    background-color: $first-color;
+                    width: 100%;
+                    padding: 20px 0px;
+                    border-radius: 10px;
+                    text-align: center;
+                    color: $fourth-color;
+                    font-weight: 400;
+                }
+            }
+        }
+
+        .events {
+            width: 100%;
+            height: auto;
             display: flex;
             flex-direction: row;
-            justify-content: space-between;
             align-items: center;
+            justify-content: space-between;
 
-            &-gauche {
-                width: 48%;
-                height: 100%;
+            &-creasso {
+                width: 30%;
+                height: 80vh;
+                background-color: $second-color;
                 display: flex;
                 flex-direction: column;
                 align-items: center;
                 justify-content: space-around;
+                border-radius: 10px;
 
-                &-titre {
-                    font-size: 2rem;
-                }
-
-                &-article1 {
-                    width: 100%;
-                    height: 40%;
+                div {
                     display: flex;
                     flex-direction: row;
-                    justify-content: space-between;
                     align-items: center;
 
-                    div {
-                        width: 40%;
-                        height: 100%;
-
-                        img {
-                            width: 100%;
-                            height: 100%;
-                            object-fit: cover;
-                            border-radius: 10px;
-                        }
+                    p {
+                        font-size: 1.5rem;
+                        font-weight: 600;
                     }
 
-                    p {
-                        width: 55%;
-                        height: 100%;
-                        display: flex;
-                        flex-direction: row;
-                        justify-content: center;
-                        align-items: center;
-                        font-size: 1.2rem;
+                    img {
+                        height: 4rem;
+                        width: auto;
                     }
                 }
 
-                &-article2 {
-                    width: 100%;
-                    height: 40%;
-                    display: flex;
-                    flex-direction: row;
-                    justify-content: space-between;
-                    align-items: center;
-
-                    div {
-                        width: 40%;
-                        height: 100%;
-
-                        img {
-                            width: 100%;
-                            height: 100%;
-                            object-fit: cover;
-                            border-radius: 10px;
-                        }
-                    }
-
-                    p {
-                        width: 55%;
-                        height: 100%;
-                        display: flex;
-                        flex-direction: row;
-                        justify-content: center;
-                        align-items: center;
-                        font-size: 1.2rem;
-                    }
+                img {
+                    width: auto;
+                    height: 85%;
+                    border-radius: 10px;
                 }
             }
 
-            &-droite {
-                width: 48%;
-                height: 100%;
+            &-article {
+                width: 68%;
+                height: 80vh;
                 display: flex;
                 flex-direction: column;
-                justify-content: space-between;
                 align-items: center;
+                justify-content: space-between;
 
-                &-texte {
-                    background-color: $couleur-secondaire;
-                    padding: 20px 150px;
+                &-content {
+                    width: 100%;
+                    height: 30%;
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    background-color: $second-color;
                     border-radius: 10px;
-                }
 
-                .barre {
-                    width: 60%;
-                    height: 2px;
-                    background-color: black;
+                    .modifier {
+                        border-radius: 0px 10px 10px 0px;
+                    }
+
+                    .p-modifier {
+                        margin-right: 10%;
+                    }
+
+                    &--modifier {
+                        flex-direction: row-reverse;
+                    }
+
+                    img {
+                        width: 50%;
+                        height: 100%;
+                        object-fit: cover;
+                        border-radius: 10px 0px 0px 10px;
+                    }
+
+                    p {
+                        margin-left: 10%;
+                    }
                 }
             }
         }
@@ -219,16 +274,12 @@ main {
 
 footer {
     width: 100%;
-    height: 40px;
-    background-color: $couleur-primaire;
-    position: absolute;
-    bottom: 0px;
+    height: 80px;
+    background-color: $first-color;
+    margin-top: 30px;
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-
-    h3 {
-        color: $couleur-tertiaire;
-    }
+    color: $fourth-color;
 }
